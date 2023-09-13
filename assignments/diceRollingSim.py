@@ -20,14 +20,14 @@ def dice_roller(min: int = 1, max: int = 6) -> str:
     print(f"[{min}-{max}] You rolled a {result}!")
 
     # User input and re-roll loop
-    # Program requires "no" or "exit" input to break
+    # Program requires "no" input to break
     while True:
         reroll = input("Would you like to roll again? ")
         if reroll.lower() in "yes":
             result = random.randint(min,max)
             print(f"[{min}-{max}] You rolled a {result}!")
             continue
-        elif reroll.lower() in "no,exit":
+        elif reroll.lower() in "no":
             return "Thank you for rolling the dice :)"
         else:
             print("Please enter (yes/no)")
