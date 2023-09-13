@@ -2,21 +2,23 @@
 import random
 
 def dice_roller(min: int = 1, max: int = 6) -> str:
-    if min <= 0:
-        return "Error: Invalid range, minimum value must be a positive integer >= 1."
-    elif min >= max:
+    # Tests to see the data can be processed
+    if min == max:
+        # Returns an error message for intangible dice
+        return "Error: Invalid range, minimum value can't be equal to the maximum."
+    elif min > max:
         # If minimum > maximum, values are swapped to prevent an error 
         # random.randint(a,b) requires b>=a.
         min,max = max,min
     
     result = random.randint(min,max)
-    print(f"You rolled a {result}!")
+    print(f"[{min}-{max}] You rolled a {result}!")
 
     while True:
         reroll = input("Would you like to roll again? ")
         if reroll.lower() in "yes":
             result = random.randint(min,max)
-            print(f"You rolled a {result}!")
+            print(f"[{min}-{max}] You rolled a {result}!")
             continue
         elif reroll.lower() in "no":
             return "Thank you for rolling the dice :)"
