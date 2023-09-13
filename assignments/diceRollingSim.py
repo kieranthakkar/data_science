@@ -1,20 +1,19 @@
+# Importing the 'random' module to generate random integers
 import random
 
-# Dice roller with upper and lower bounds defined within the function call.
-# By default, dice is 6-sided with min. roll = 1 and max. roll = 6.
 def dice_roller(min: int = 1, max: int = 6) -> str:
-    """# Dice rolling function"""
     if min <= 0:
         return "Error: Invalid range, minimum value must be a positive integer >= 1."
-        #Returns 
     elif min >= max:
-        return "Error: Invalid range, minumum must be lower than the maximum." 
+        # If minimum > maximum, values are swapped to prevent an error 
+        # random.randint(a,b) requires b>=a.
+        min,max = max,min
     
     result = random.randint(min,max)
     print(f"You rolled a {result}!")
 
     while True:
-        reroll = input("Would you like to roll again?  ")
+        reroll = input("Would you like to roll again? ")
         if reroll.lower() in "yes":
             result = random.randint(min,max)
             print(f"You rolled a {result}!")
