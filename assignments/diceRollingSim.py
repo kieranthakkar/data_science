@@ -32,12 +32,8 @@ def dice_roller(min: int = 1, max: int = 6) -> str:
         else:
             print("Please enter (yes/no)")
 
-dice_roller.__annotations__
-
-#print(dice_roller())        # Classic dice (1 to 6 by default)
-#print(dice_roller(2,20))    # Adjusted dice rolling between 2 and 20
-#print(dice_roller(0,4))     # Error. Invalid range (Min value != 0)
-#print(dice_roller(6,1))     # Error. Invalid range (Min < Max)
-
+# Testing
+#print(dice_roller())       # Classic dice (1 to 6 by default)
+#print(dice_roller(2,20))   # Modified dice rolling between 2 and 20
 
 
