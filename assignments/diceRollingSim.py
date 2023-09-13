@@ -1,5 +1,7 @@
 import random
 
+# Dice roller with upper and lower bounds defined within the function call.
+# By default, dice is 6-sided with min. roll = 1 and max. roll = 6.
 def dice_roller(min: int = 1, max: int = 6) -> str:
     """# Dice rolling function"""
     if min <= 0:
