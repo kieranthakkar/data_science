@@ -20,7 +20,7 @@ def dice_roller(min: int = 1, max: int = 6) -> str:
             result = random.randint(min,max)
             print(f"[{min}-{max}] You rolled a {result}!")
             continue
-        elif reroll.lower() in "no":
+        elif reroll.lower() in "no,exit":
             return "Thank you for rolling the dice :)"
         else:
             print("Please enter (yes/no)")
