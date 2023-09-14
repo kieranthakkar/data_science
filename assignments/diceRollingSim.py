@@ -6,7 +6,7 @@
 # Importing the 'random' module to generate random integers
 import random
 
-def dice_roller(min: int = 1, max: int = 6) -> str:
+def dice_roller(min: int = 1, max: int = 6):
     # Tests to see the data can be processed
     if min == max:
         # Returns an error message for intangible dice
