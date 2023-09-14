@@ -23,7 +23,7 @@ def dice_roller(min: int = 1, max: int = 6):
     # User input and re-roll loop
     # Program requires "no" input to break
     while True:
-        reroll = input("Would you like to roll again? ").lower()
+        reroll = input("Would you like to roll again? (yes/no) ").lower()
         if reroll in "yes":
             result = random.randint(min,max)
             print(f"[{min}-{max}] You rolled a {result}!")
