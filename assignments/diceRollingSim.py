@@ -32,3 +32,5 @@ def dice_roller(min: int = 1, max: int = 6):
             return "Thank you for rolling the dice :)"
         else:
             print("Please enter (yes/no)")
+
+dice_roller()
