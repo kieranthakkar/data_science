@@ -44,3 +44,22 @@ def number_guesser():
         else:
             print("Please type an integer.")
             continue
+
+        n += 1  # Counter
+
+        # Guess to answer comparisons
+        if guess == ans:
+            if n == 1:
+                print("FIRST TRY!")
+                break
+            else:
+                print(f"Correct!\nThat took {n} tries :)")
+                break
+        else:
+            print("INCORRECT.")
+            if guess > ans:
+                print("Too high.")
+            else:
+                print("Too low.")
+
+number_guesser()
