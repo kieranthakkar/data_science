@@ -29,7 +29,8 @@ def dice_roller(min: int = 1, max: int = 6):
             print(f"[{min}-{max}] You rolled a {result}!")
             continue
         elif reroll in "no":
-            return "Thank you for rolling the dice :)"
+            print("Thank you for rolling the dice :)")
+            break
         else:
             print("Please enter (yes/no)")
 
