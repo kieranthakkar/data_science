@@ -1,7 +1,7 @@
 # kieranthakkar, Murtaza3D
-# DICE ROLLER w/ upper and lower bounds as arguements in the function declaration.
-# By default, dice are 6-sided with min. roll = 1 and max. roll = 6.
-# Program will ask if user wants to roll again, inputting "no" ends the program.
+# GUESS THE NUMBER
+# This program uses the random module to generate a random integer between 0 and X, where X is a user-defined upper bound.
+# User will input guesses and the program will respond accordingly to help the user.
 
 # Importing the 'random' module to generate random integers
 import random
