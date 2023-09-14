@@ -29,7 +29,7 @@ def number_guesser():
     # While loop with counter to take user guesses or end the program.
     n = 0
     while True:
-        guess = input("Make a guess or (exit): ").lower()
+        guess = input("Make a guess or (quit): ").lower()
         # Checking to see if guess is a positive integer. If input is +integer, cast guess to type int.
         if guess.isdigit():
             guess = int(guess)
