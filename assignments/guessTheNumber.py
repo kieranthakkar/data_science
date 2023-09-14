@@ -26,3 +26,21 @@ def number_guesser():
         print("Please type a positive integer.")
         return number_guesser()
     
+    # While loop with counter to take user guesses or end the program.
+    n = 0
+    while True:
+        guess = input("Make a guess or (exit): ").lower()
+        # Checking to see if guess is a positive integer. If input is +integer, cast guess to type int.
+        if guess.isdigit():
+            guess = int(guess)
+            # Check to ensure guess is within the range.
+            if guess > upperBound:
+                print("Guess must be equal to or lower than your upper-bound.")
+                continue
+        # Does the user want to quit?
+        elif guess == "quit":
+            break
+        # Guesses reaching here are not in the correct form, restart the loop.
+        else:
+            print("Please type an integer.")
+            continue
