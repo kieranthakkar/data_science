@@ -45,7 +45,8 @@ def number_guesser():
             print("Please type an integer.")
             continue
 
-        n += 1  # Counter
+        # Counter placed here to only count valid inputs which passed the checks
+        n += 1 
 
         # Guess to answer comparisons
         if guess == ans:
