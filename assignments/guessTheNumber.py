@@ -35,7 +35,7 @@ def number_guesser():
             guess = int(guess)
             # Check to ensure guess is within the range.
             if guess > upperBound:
-                print("Guess must be equal to or lower than your upper-bound.")
+                print("Error: Guess must be equal to or lower than your upper-bound.")
                 continue
         # Does the user want to quit?
         elif guess == "quit":
