@@ -7,7 +7,10 @@
 # Importing the 'random' module to generate random integers
 import random, os
 
-xPos = yPos = 0
+# Starting position
+xPos, yPos = 0,-1
+
+# The game - while loop to continuously take input
 while True:
     request = input("Request: ").lower()
     if request == "left":
@@ -21,9 +24,21 @@ while True:
         yPos += 1
     if request == "down":
         yPos -= 1
-    if request == "end":
+    if request == "end" or "quit" or "exit":
         break
 
     os.system('cls')
     print(f"{xPos},{yPos}")
-
+    
+    
+    
+# Map generation
+#  -1,1 print(f"┌───┬───┬───┐\n│ X │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘")
+#   0,1 print(f"┌───┬───┬───┐\n│   │ X │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘")
+#   1,1 print(f"┌───┬───┬───┐\n│   │   │ X │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘")
+#  -1,0 print(f"┌───┬───┬───┐\n│   │   │   │\n├───┼───┼───┤\n│ X │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘")
+#   0,0 print(f"┌───┬───┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │ X │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘")
+#   1,0 print(f"┌───┬───┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │ X │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘")
+# -1,-1 print(f"┌───┬───┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│ X │   │   │\n└───┴───┴───┘")
+#  0,-1 print(f"┌───┬───┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │ X │   │\n└───┴───┴───┘")
+#  1,-1 print(f"┌───┬───┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │ X │\n└───┴───┴───┘")
