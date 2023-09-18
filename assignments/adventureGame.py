@@ -31,15 +31,24 @@ while True:
 
     if request == "left":
         xPos -= 1
-        if xPos:
-            pass
-        
-    if request == "right":
-        xPos += 1
-    if request == "up":
-        yPos += 1
-    if request == "down":
-        yPos -= 1
+    elif request == "right":
+        if xPos == 1:
+            print("You can't move further in this direction.")
+            continue
+        else:
+            xPos += 1
+    elif request == "up":
+        if yPos == 1:
+            print("You can't move further in this direction.")
+            continue
+        else:
+            yPos += 1
+    elif request == "down":
+        if yPos == -1:
+            print("You can't move further in this direction.")
+            continue
+        else:
+            yPos -= 1
     if request == "end" or "quit" or "exit":
         break
 
