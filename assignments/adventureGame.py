@@ -49,8 +49,6 @@ while True:
             continue
         else:
             yPos -= 1
-    if request == "end" or "quit" or "exit":
-        break
 
     os.system('cls')
     print(f"{xPos},{yPos}")
