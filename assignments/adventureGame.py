@@ -5,7 +5,7 @@
 
 
 # Importing the 'os' module to use the 'cls' command and clear the terminal
-import os
+import os, random
 os.system('cls')
 
 # Map generation
@@ -19,12 +19,12 @@ map = {"-1,1": "┌───┬MAP┬───┐\n│ X │   │   │\n├─
  "0,-1": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │ X │   │\n└───┴───┴───┘",
  "1,-1": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │ X │\n└───┴───┴───┘"}
 
-# Random name
-names = ["Michael Scott", "Jim Halpert", "Pam Beesly", "Dwight Schrute", "Creed", "Kevin Malone", "Toby", "Meredith"]
-offices = []
+# Random name/office selection
+names = ["Michael Scott", "Jim", "Pam", "Dwight", "Creed", "Kevin", "Toby", "Meredith"]
+offices = ["-1,-1", "0,0", "1,-1", "-1,0", "1,1", "0,1", "-1,1", "1,0"]
 random_index = random.randint(0,7)
 random_name = names[random_index]
-delivery = offices[random_index]
+deliveryCoord = offices[random_index]
 
 # Starting position
 xPos, yPos = 0,-1
