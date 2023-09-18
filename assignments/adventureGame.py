@@ -44,29 +44,31 @@ while True:
     # Movement with limits, movement works along a Cartesian coordinate system
     if request == "left":
         if xPos == -1:
+            os.system('cls')
             print("You can't move further in this direction.")
             continue
         else:
             xPos -= 1
     elif request == "right":
         if xPos == 1:
+            os.system('cls')
             print("You can't move further in this direction.")
             continue
         else:
             xPos += 1
     elif request == "up":
         if yPos == 1:
+            os.system('cls')
             print("You can't move further in this direction.")
             continue
         else:
             yPos += 1
     elif request == "down":
         if yPos == -1:
+            os.system('cls')
             print("You can't move further in this direction.")
             continue
         else:
             yPos -= 1
 
     os.system('cls')
-    print(f"{xPos},{yPos}")
-    
