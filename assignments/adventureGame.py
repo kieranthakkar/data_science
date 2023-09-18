@@ -24,6 +24,11 @@ xPos, yPos = 0,-1
 # The game - while loop to continuously take input
 while True:
     request = input("Request: ").lower()
+    
+    if request == "end":
+        print("Game over")
+        break
+
     if request == "left":
         xPos -= 1
         if xPos:
