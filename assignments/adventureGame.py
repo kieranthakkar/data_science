@@ -28,6 +28,7 @@ deliveryCoord = offices[random_index]
 
 # Starting position
 xPos, yPos = 0,-1
+wasOn = False
 stringCoord = str(xPos)+","+str(yPos)
 print(f"You have entered The Office. Find {random_name} to deliver their pizza.")
 
@@ -47,28 +48,36 @@ while True:
     if request == "left":
         if xPos == -1:
             os.system('cls')
-            print("You can't move further in this direction.")
+            print(wallError)
+            if wasOn is True:
+                wasOn = False
             continue
         else:
             xPos -= 1
     elif request == "right":
         if xPos == 1:
             os.system('cls')
-            print("You can't move further in this direction.")
+            print(wallError)
+            if wasOn is True:
+                wasOn = False
             continue
         else:
             xPos += 1
     elif request == "up":
         if yPos == 1:
             os.system('cls')
-            print("You can't move further in this direction.")
+            print(wallError)
+            if wasOn is True:
+                wasOn = False
             continue
         else:
             yPos += 1
     elif request == "down":
         if yPos == -1:
             os.system('cls')
-            print("You can't move further in this direction.")
+            print(wallError)
+            if wasOn is True:
+                wasOn = False
             continue
         else:
             yPos -= 1
