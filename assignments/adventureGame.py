@@ -33,8 +33,12 @@ xPos, yPos = 0,-1
 while True:
     request = input("Request: ").lower()
     
-    if request == "end":
-        print("Game over")
+    if request == "end" or request == "quit" or request == "exit":
+        print("Failed to deliver pizza. Game over.")
+        break
+
+    if request == "deliver" and stringCoord == deliveryCoord:
+        print(f"{random_name} thanks you for the pizza.\nGame over.")
         break
 
     if request == "left":
