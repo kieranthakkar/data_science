@@ -41,6 +41,7 @@ while True:
         print(f"{random_name} thanks you for the pizza.\nGame over.")
         break
 
+    # Movement with limits, movement works along a Cartesian coordinate system
     if request == "left":
         if xPos == -1:
             print("You can't move further in this direction.")
