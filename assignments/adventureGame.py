@@ -40,9 +40,16 @@ while True:
         print("Failed to deliver pizza. Game over.")
         break
 
-    if request == "deliver" and stringCoord == deliveryCoord:
-        print(f"{random_name} thanks you for the pizza.\nGame over.")
-        break
+    if stringCoord == deliveryCoord:
+        if request == "deliver":
+            os.system('cls')
+            print(f"{random_name} thanks you for the pizza.")
+            endTime = time.perf_counter()
+            timer = endTime - startTime
+            print(f"Game over. That took {timer} seconds to complete.")
+            break
+        elif request in ["up","down","left","right"]:
+            wasOn = True
 
     # Movement with limits, movement works along a Cartesian coordinate system
     if request == "left":
