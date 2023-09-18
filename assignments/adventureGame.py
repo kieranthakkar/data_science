@@ -30,7 +30,11 @@ while True:
         break
 
     if request == "left":
-        xPos -= 1
+        if xPos == -1:
+            print("You can't move further in this direction.")
+            continue
+        else:
+            xPos -= 1
     elif request == "right":
         if xPos == 1:
             print("You can't move further in this direction.")
