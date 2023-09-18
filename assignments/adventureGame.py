@@ -70,5 +70,5 @@ while True:
             continue
         else:
             yPos -= 1
-
+    stringCoord = str(xPos)+","+str(yPos)
     os.system('cls')
