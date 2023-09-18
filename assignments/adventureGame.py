@@ -24,7 +24,7 @@ while True:
         yPos += 1
     if request == "down":
         yPos -= 1
-    if request == "end" or "quit" or "exit":
+    if request == "end" or "quit" or "exit": # End statements
         break
 
     os.system('cls')
