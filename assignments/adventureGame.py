@@ -34,7 +34,20 @@ print(f"You have entered The Office. Find {random_name} to deliver their pizza."
 
 # The game - while loop to continuously take input
 while True:
-    request = input("Request: ").lower()
+    # Constantly show map w/ instructions
+    print(map[stringCoord])
+    print(f"Target = {random_name}\nMove with (up), (down), (left), (right).\n")
+
+    # Delivery prompt
+    if stringCoord == deliveryCoord:
+        print(f"(deliver) pizza to {random_name}")
+
+    # Run away outcome
+    if wasOn is True:
+        print(f"{random_name} says come back here!")
+        wasOn = False
+
+    request = input("Action: ").lower()
     
     if request == "end" or request == "quit" or request == "exit":
         print("Failed to deliver pizza. Game over.")
