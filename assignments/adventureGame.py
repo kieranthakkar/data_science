@@ -19,6 +19,13 @@ map = {"-1,1": "┌───┬───┬───┐\n│ X │   │   │\n
  "0,-1": "┌───┬───┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │ X │   │\n└───┴───┴───┘",
  "1,-1": "┌───┬───┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │ X │\n└───┴───┴───┘"}
 
+# Random name
+names = ["Michael Scott", "Jim Halpert", "Pam Beesly", "Dwight Schrute", "Creed", "Kevin Malone", "Toby", "Meredith"]
+offices = []
+random_index = random.randint(0,7)
+random_name = names[random_index]
+delivery = offices[random_index]
+
 # Starting position
 xPos, yPos = 0,-1
 
