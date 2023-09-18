@@ -6,6 +6,7 @@
 
 # Importing the 'os' module to use the 'cls' command and clear the terminal
 import os
+os.system('cls')
 
 # Map generation
 map = {"-1,1": "┌───┬───┬───┐\n│ X │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
