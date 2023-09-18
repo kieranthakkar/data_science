@@ -28,6 +28,8 @@ deliveryCoord = offices[random_index]
 
 # Starting position
 xPos, yPos = 0,-1
+stringCoord = str(xPos)+","+str(yPos)
+print(f"You have entered The Office. Find {random_name} to deliver their pizza.")
 
 # The game - while loop to continuously take input
 while True:
