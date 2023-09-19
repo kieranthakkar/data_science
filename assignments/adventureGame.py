@@ -52,26 +52,26 @@ while True:
         print(f"{random_name} says come back here!")
         wasOn = False
 
-    request = input("Action: ").lower()
+    action = input("Action: ").lower()
     
-    if request == "end" or request == "quit" or request == "exit":
+    if action == "end" or action == "quit" or action == "exit":
         print("Failed to deliver pizza. Game over.")
         break
     
     if stringCoord == deliveryCoord:
-        if request == "deliver":
+        if action == "deliver":
             os.system('cls')
             print(f"{random_name} thanks you for the pizza.")
             endTime = time.perf_counter()
             timer = endTime-startTime
             print(f"Game over. That took {timer} second(s) to complete.")
             break
-        elif request in ["up","down","left","right"]:
+        elif action in ["up","down","left","right"]:
             wasOn = True
 
     # Movement with limits, movement works along a Cartesian coordinate system
     wallError = "\033[91mYou can't move further in this direction.\033[0m"
-    if request == "left":
+    if action == "left":
         if xPos == -1:
             os.system('cls')
             print(wallError)
@@ -80,7 +80,7 @@ while True:
             continue
         else:
             xPos -= 1
-    elif request == "right":
+    elif action == "right":
         if xPos == 1:
             os.system('cls')
             print(wallError)
@@ -89,7 +89,7 @@ while True:
             continue
         else:
             xPos += 1
-    elif request == "up":
+    elif action == "up":
         if yPos == 1:
             os.system('cls')
             print(wallError)
@@ -98,7 +98,7 @@ while True:
             continue
         else:
             yPos += 1
-    elif request == "down":
+    elif action == "down":
         if yPos == -1:
             os.system('cls')
             print(wallError)
