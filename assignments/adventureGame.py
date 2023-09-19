@@ -13,15 +13,15 @@ os.system('cls')
 startTime = time.perf_counter()
 
 # Map generation
-map = {"-1,1": "┌───┬MAP┬───┐\n│ X │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
-  "0,1": "┌───┬MAP┬───┐\n│   │ X │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
-  "1,1": "┌───┬MAP┬───┐\n│   │   │ X │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
- "-1,0": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│ X │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
-  "0,0": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │ X │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
-  "1,0": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │ X │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
-"-1,-1": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│ X │   │   │\n└───┴───┴───┘",
- "0,-1": "┌───┬MAP┬───┐\tLOBBY AREA\n│   │   │   │\n├───┼───┼───┤\tTo your right is a receptionist, to your left is the Regional Manager's office.\n│   │   │   │\tIn front of you are office employees.\n├───┼───┼───┤\n│   │ X │   │\tBehind you, the door is closed. You will need to deliver the pizza to leave.\n└───┴───┴───┘",
- "1,-1": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │ X │\n└───┴───┴───┘"}
+map = {"-1,1": "┌───┬MAP┬───┐\tHUMAN RESOURCES\n│ X │   │   │\n├───┼───┼───┤\tHere you find Toby.\n│   │   │   │\t\n├───┼───┼───┤\n│   │   │   │\tTo the right a man waves, he drools and points at the pizza.\n└───┴───┴───┘\tBehind is the conference room.",
+  "0,1": "┌───┬MAP┬───┐\tKEVIN'S DESK\n│   │ X │   │\n├───┼───┼───┤\tKevin drools whilst staring at the pizza.\n│   │   │   │\t\n├───┼───┼───┤\n│   │   │   │\tOn the right is a suspicious elderly man. To the left you see HR.\n└───┴───┴───┘\t",
+  "1,1": "┌───┬MAP┬───┐\tCREED'S DESK\n│   │   │ X │\n├───┼───┼───┤\tNo one knows what he does here.\n│   │   │   │\t\n├───┼───┼───┤\n│   │   │   │\tTo the left a man waves, he drools and points at the pizza. \n└───┴───┴───┘\tBehind a lady plays solitaire.",
+ "-1,0": "┌───┬MAP┬───┐\tTHE CONFERENCE ROOM\n│   │   │   │\n├───┼───┼───┤\tDwight is here. He refuses to speak, but he's smiling?.\n│ X │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
+  "0,0": "┌───┬MAP┬───┐\tJIM AND DWIGHTS'S DESKS\n│   │   │   │\n├───┼───┼───┤\tJim is on the phone trying to close a sale. Dwight is not here\n│   │ X │   │\tbut Jim points to the conference room.\n├───┼───┼───┤\n│   │   │   │\tThe conference room is on the left. To your right a lady plays solitaire.\n└───┴───┴───┘\tIn front a man waves - he points at the pizza.",
+  "1,0": "┌───┬MAP┬───┐\tMEREDITH'S DESK\n│   │   │   │\n├───┼───┼───┤\tHere Meredith plays Microsoft Solitaire whilst attempting to\n│   │   │ X │\thide a bottle of rum.\n├───┼───┼───┤\n│   │   │   │\tTo your left is a lively sales rep. Up ahead there's a suspicious \n└───┴───┴───┘\telderly man. Behind/down is the reception.",
+"-1,-1": "┌───┬MAP┬───┐\tMICHAEL SCOTT'S OFFICE\n│   │   │   │\n├───┼───┼───┤\tA rather basic office for the Regional Manager.\n│   │   │   │\tHe keeps shouting \"That's what she said!\"\n├───┼───┼───┤\n│ X │   │   │\tAdjacent is the conference room and lobby.\n└───┴───┴───┘",
+ "0,-1": "┌───┬MAP┬───┐\tLOBBY AREA\n│   │   │   │\n├───┼───┼───┤\tTo your right is a receptionist, to your left is the Regional Manager's office.\n│   │   │   │\tIn front of you are office employees.\n├───┼───┼───┤\n│   │ X │   │\tBehind you, the door is closed. You must deliver the pizza to leave.\n└───┴───┴───┘",
+ "1,-1": "┌───┬MAP┬───┐\tTHE RECEPTION - PAM\n│   │   │   │\n├───┼───┼───┤\tHere you find Pam, the Receptionist.\n│   │   │   │\tShe is on the phone and offers no help.\n├───┼───┼───┤\n│   │   │ X │\tUp ahead you see a woman playing solitaire on the computer.\n└───┴───┴───┘"}
 
 # Random name/office selection
 names = ["Michael Scott", "Jim", "Pam", "Dwight", "Creed", "Kevin", "Toby", "Meredith"]
