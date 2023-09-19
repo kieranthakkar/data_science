@@ -34,8 +34,8 @@ wasOn = False
 stringCoord = str(xPos)+","+str(yPos)
 
 # Opening banner
-opener = f"You have entered The Office. Find \033[1m{random_name}\033[0m and deliver their pizza."
-print("-"*len(opener)+"\n"+f"{opener}"+"\n"+"-"*len(opener))
+opener = f"You have entered The Office. Find \033[1m{random_name}\033[0m and deliver their pizza"
+print("-"*(len(opener)-6)+"\n"+f" {opener}"+"\n"+"-"*(len(opener)-6))
 
 # The game - while loop to continuously take input
 while True:
