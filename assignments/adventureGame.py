@@ -30,7 +30,10 @@ deliveryCoord = offices[random_index]
 xPos, yPos = 0,-1
 wasOn = False
 stringCoord = str(xPos)+","+str(yPos)
-print(f"You have entered The Office. Find {random_name} to deliver their pizza.")
+
+# Opening banner
+opener = f"You have entered The Office. Find \033[1m{random_name}\033[0m and deliver their pizza."
+print("-"*len(opener)+"\n"+f"{opener}"+"\n"+"-"*len(opener))
 
 # The game - while loop to continuously take input
 while True:
