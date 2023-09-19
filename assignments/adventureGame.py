@@ -75,8 +75,7 @@ while True:
         if xPos == -1:
             os.system('cls')
             print(wallError)
-            if wasOn is True:
-                wasOn = False
+            wasOn = False
             continue
         else:
             xPos -= 1
@@ -84,8 +83,7 @@ while True:
         if xPos == 1:
             os.system('cls')
             print(wallError)
-            if wasOn is True:
-                wasOn = False
+            wasOn = False
             continue
         else:
             xPos += 1
@@ -93,8 +91,7 @@ while True:
         if yPos == 1:
             os.system('cls')
             print(wallError)
-            if wasOn is True:
-                wasOn = False
+            wasOn = False
             continue
         else:
             yPos += 1
@@ -102,8 +99,7 @@ while True:
         if yPos == -1:
             os.system('cls')
             print(wallError)
-            if wasOn is True:
-                wasOn = False
+            wasOn = False
             continue
         else:
             yPos -= 1
