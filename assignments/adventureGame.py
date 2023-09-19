@@ -4,9 +4,7 @@
 # You’ll also need to set limits for how far the user can move. In other words, create “walls” around the rooms that tell the user, “You can’t move further in this direction.”
 
 
-# 'os' module for 'cls' command to clear the terminal
-# 'random' module used to find where pizza is delivered
-# 'time' module needed for perf_counter() - used to time deliveries
+# Importing the 'os' module to use the 'cls' command and clear the terminal
 import os, random, time
 os.system('cls')
 
@@ -57,7 +55,7 @@ while True:
     action = input("Action: ").lower()
     
     if action == "end" or action == "quit" or action == "exit":
-        print("Failed to deliver pizza. Game over.\n")
+        print("Failed to deliver pizza. Game over.")
         break
     
     if stringCoord == deliveryCoord:
@@ -66,7 +64,7 @@ while True:
             print(f"{random_name} thanks you for the pizza.")
             endTime = time.perf_counter()
             timer = endTime-startTime
-            print(f"Game over. That took {timer} second(s) to complete.\n")
+            print(f"Game over. That took {timer} second(s) to complete.\n\n")
             break
         elif action in ["up","down","left","right"]:
             wasOn = True
@@ -109,7 +107,5 @@ while True:
             continue
         else:
             yPos -= 1
-    
-    # Update coordinates after movement and reset the terminal.
     stringCoord = str(xPos)+","+str(yPos)
     os.system('cls')
