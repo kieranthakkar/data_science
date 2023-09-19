@@ -16,7 +16,7 @@ map = {"-1,1": "┌───┬MAP┬───┐\n│ X │   │   │\n├─
   "0,0": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │ X │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
   "1,0": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │ X │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
 "-1,-1": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│ X │   │   │\n└───┴───┴───┘",
- "0,-1": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │ X │   │\n└───┴───┴───┘",
+ "0,-1": "┌───┬MAP┬───┐\tLOBBY AREA\n│   │   │   │\n├───┼───┼───┤\tTo your right is a receptionist, to your left is the Regional Manager's office.\n│   │   │   │\tIn front of you are office employees.\n├───┼───┼───┤\n│   │ X │   │\tBehind you, the door is closed and you will need to deliver the pizza to leave.\n└───┴───┴───┘",
  "1,-1": "┌───┬MAP┬───┐\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │ X │\n└───┴───┴───┘"}
 
 # Random name/office selection
