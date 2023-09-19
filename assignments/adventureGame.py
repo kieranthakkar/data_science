@@ -4,7 +4,9 @@
 # You’ll also need to set limits for how far the user can move. In other words, create “walls” around the rooms that tell the user, “You can’t move further in this direction.”
 
 
-# Importing the 'os' module to use the 'cls' command and clear the terminal
+# 'os' module for 'cls' command to clear the terminal
+# 'random' module used to find where pizza is delivered
+# 'time' module needed for perf_counter() - used to time deliveries
 import os, random, time
 os.system('cls')
 
@@ -107,5 +109,7 @@ while True:
             continue
         else:
             yPos -= 1
+    
+    # Update coordinates after movement and reset the terminal.
     stringCoord = str(xPos)+","+str(yPos)
     os.system('cls')
