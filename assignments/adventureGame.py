@@ -1,12 +1,14 @@
 # kieranthakkar, tanu
-# ADVENTURE GAME - a complete text game
+# ADVENTURE GAME - a complete time-trials text game
 # the program will let users move through rooms based on user input and get descriptions of each room. To create this, you’ll need to establish the direction in which the user can move, a way to track how far the user has moved (and therefore which room he/she is in), and to print out a description.
 # You’ll also need to set limits for how far the user can move. In other words, create “walls” around the rooms that tell the user, “You can’t move further in this direction.”
 
 
 # Importing the 'os' module to use the 'cls' command and clear the terminal
-import os, random
+import os, random, time
 os.system('cls')
+
+startTime = time.perf_counter()
 
 # Map generation
 map = {"-1,1": "┌───┬MAP┬───┐\n│ X │   │   │\n├───┼───┼───┤\n│   │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
@@ -55,14 +57,14 @@ while True:
     if request == "end" or request == "quit" or request == "exit":
         print("Failed to deliver pizza. Game over.")
         break
-
+    
     if stringCoord == deliveryCoord:
         if request == "deliver":
             os.system('cls')
             print(f"{random_name} thanks you for the pizza.")
             endTime = time.perf_counter()
-            timer = endTime - startTime
-            print(f"Game over. That took {timer} seconds to complete.")
+            timer = endTime-startTime
+            print(f"Game over. That took {timer} second(s) to complete.")
             break
         elif request in ["up","down","left","right"]:
             wasOn = True
