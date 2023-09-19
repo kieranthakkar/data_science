@@ -55,7 +55,7 @@ while True:
     action = input("Action: ").lower()
     
     if action == "end" or action == "quit" or action == "exit":
-        print("Failed to deliver pizza. Game over.")
+        print("Failed to deliver pizza. Game over.\n")
         break
     
     if stringCoord == deliveryCoord:
@@ -64,7 +64,7 @@ while True:
             print(f"{random_name} thanks you for the pizza.")
             endTime = time.perf_counter()
             timer = endTime-startTime
-            print(f"Game over. That took {timer} second(s) to complete.")
+            print(f"Game over. That took {timer} second(s) to complete.\n")
             break
         elif action in ["up","down","left","right"]:
             wasOn = True
