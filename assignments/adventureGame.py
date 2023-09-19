@@ -43,21 +43,21 @@ print("-"*(len(opener)-6)+"\n"+f" {opener}"+"\n"+"-"*(len(opener)-6))
 while True:
     # Constantly show map w/ instructions
     print(map[stringCoord])
-    print(f"Target = {random_name}\nMove with (up), (down), (left), (right).\n")
+    print(f"\nTarget = {random_name}\t\tMove with (up), (down), (left), (right).\n")
 
     # Delivery prompt
     if stringCoord == deliveryCoord:
-        print(f"(deliver) pizza to {random_name}")
+        print(f"\033[32m-! (deliver) pizza to {random_name} !-\033[0m")
 
     # Run away outcome
     if wasOn is True:
         print(f"{random_name} says come back here!")
         wasOn = False
 
-    action = input("Action: ").lower()
+    action = input("\nAction: ").lower()
     
     if action == "end" or action == "quit" or action == "exit":
-        print("Failed to deliver pizza. Game over.\n")
+        print("\033[91mFailed to deliver pizza. Game over.\033[0m\n")
         break
     
     # Route for delivery and game completion
