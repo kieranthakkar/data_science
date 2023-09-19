@@ -65,6 +65,7 @@ while True:
             wasOn = True
 
     # Movement with limits, movement works along a Cartesian coordinate system
+    wallError = "\033[91mYou can't move further in this direction.\033[0m"
     if request == "left":
         if xPos == -1:
             os.system('cls')
