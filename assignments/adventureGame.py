@@ -60,6 +60,7 @@ while True:
         print("Failed to deliver pizza. Game over.\n")
         break
     
+    # Route for delivery and game completion
     if stringCoord == deliveryCoord:
         if action == "deliver":
             os.system('cls')
