@@ -1,7 +1,9 @@
 # kieranthakkar, tmahadani, Mohamed Idris, Haley Visconti
-# ADVENTURE GAME - a complete time-trials text game
-# Users are timed as they move through rooms w/ input.
-# A map is displayed with live tracking and descriptions of each room.
+"""
+ADVENTURE GAME - a complete time-trials text game.
+PLAY IN TERMINAL
+Users are timed as they move through rooms w/ input.
+A map is displayed with live tracking and descriptions of each room"""
 
 
 # 'os' module for 'cls' command to clear the terminal
