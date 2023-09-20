@@ -1,4 +1,4 @@
-# kieranthakkar, tanu
+# kieranthakkar, tmahadani, Mohamed Idris, Haley Visconti
 # ADVENTURE GAME - a complete time-trials text game
 # Users are timed as they move through rooms w/ input.
 # A map is displayed with live tracking and descriptions of each room.
