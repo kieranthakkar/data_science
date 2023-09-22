@@ -1,4 +1,4 @@
-# kieranthakkar, tmahadani, Mohamed Idris, Haley Visconti
+# kieranthakkar, Tanu, Mohamed Idris, Haley Visconti
 """
 ADVENTURE GAME - a complete time-trials text game.
 PLAY IN TERMINAL
