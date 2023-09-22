@@ -15,7 +15,7 @@ os.system('cls')
 startTime = time.perf_counter()
 
 # Map generation
-map = {"-1,1": "┌───┬MAP┬───┐\tHUMAN RESOURCES\n│ X │   │   │\n├───┼───┼───┤\tHere you find Toby.\n│   │   │   │\t\n├───┼───┼───┤\n│   │   │   │\tTo the right a man waves, he drools and points at the pizza.\n└───┴───┴───┘\tBehind is the conference room.",
+map = {"-1,1": "┌───┬MAP┬───┐\tHUMAN RESOURCES\n│ X │   │   │\n├───┼───┼───┤\tHere you find Toby.\n│   │   │   │\t\n├───┼───┼───┤\tTo the right a man waves, he drools and points at the pizza.\n│   │   │   │\tBehind is the conference room.\n└───┴───┴───┘\t",
   "0,1": "┌───┬MAP┬───┐\tKEVIN'S DESK\n│   │ X │   │\n├───┼───┼───┤\tKevin drools whilst staring at the pizza.\n│   │   │   │\t\n├───┼───┼───┤\n│   │   │   │\tOn the right is a suspicious elderly man. To the left you see HR.\n└───┴───┴───┘\t",
   "1,1": "┌───┬MAP┬───┐\tCREED'S DESK\n│   │   │ X │\n├───┼───┼───┤\tNo one knows what he does here.\n│   │   │   │\t\n├───┼───┼───┤\n│   │   │   │\tTo the left a man waves, he drools and points at the pizza. \n└───┴───┴───┘\tBehind a lady plays solitaire.",
  "-1,0": "┌───┬MAP┬───┐\tTHE CONFERENCE ROOM\n│   │   │   │\n├───┼───┼───┤\tDwight is here. He refuses to speak, but he's smiling?.\n│ X │   │   │\n├───┼───┼───┤\n│   │   │   │\n└───┴───┴───┘",
