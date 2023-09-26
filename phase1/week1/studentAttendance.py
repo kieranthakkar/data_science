@@ -12,7 +12,7 @@ def view():
 # Writing to .csv file
 def add():
     pwd = input("Password: ")
-    with open("student.csv", "a") as csv_file:
+    with open("students.csv", "a") as csv_file:
         char_writer = csv.writer(csv_file, delimiter=',',quotechar='"',quoting=csv.QUOTE_MINIMAL)
         char_writer.writerow(["Mango", "Papaya"])
 
