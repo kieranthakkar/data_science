@@ -3,7 +3,10 @@
 ADVENTURE GAME - a complete time-trials text game.
 PLAY IN TERMINAL
 Users are timed as they move through rooms w/ input.
-A map is displayed with live tracking and descriptions of each room"""
+A map is displayed with live tracking and descriptions of each room
+
+5/10/23 - This version of the game will no longer be updated. To see any further developments please see the repo 'theOfficeGame.'
+"""
 
 
 # 'os' module for 'cls' command to clear the terminal
